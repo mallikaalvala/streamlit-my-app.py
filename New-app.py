@@ -91,7 +91,7 @@ if uploaded_file is not None:
     # ---------------------------
     # Employees Needing Training in Data Integrity
     # ---------------------------
-    st.subheader("Employees Needing Training – Data Integrity")
+    st.subheader("Employees Needing Training â€“ Data Integrity")
     needs_training_data_integrity = df[
         df['Data Integrity'] < TRAINING_THRESHOLD
     ][['Name', 'Data Integrity']]
@@ -119,7 +119,7 @@ if uploaded_file is not None:
     # ---------------------------
     # Time Management Training Count
     # ---------------------------
-    st.subheader("Employees Needing Training – Time Management")
+    st.subheader("Employees Needing Training â€“ Time Management")
     time_mgmt_training_count = df[
         df['Time Management'] < TRAINING_THRESHOLD
     ].shape[0]
@@ -129,7 +129,7 @@ if uploaded_file is not None:
     # ---------------------------
     # Employees Not Requiring Training in RFT
     # ---------------------------
-    st.subheader("Employees Not Requiring Training – RFT")
+    st.subheader("Employees Not Requiring Training â€“ RFT")
 
     no_training_rft = df[
         df['R.F.T. (Right First Time)'] >= TRAINING_THRESHOLD
@@ -139,3 +139,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Please upload a CSV file to continue.")
+
