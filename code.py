@@ -6,9 +6,9 @@ import re
 # -------------------------------------------------
 # Page Config
 # -------------------------------------------------
-st.set_page_config(page_title="TNA Analytics & NLP Query Portal", layout="wide")
+st.set_page_config(page_title="TNA Portal", layout="wide")
 
-st.title("Training Needs Analysis (TNA) Query Portal")
+st.title("Training Needs Analysis Portal")
 
 # -------------------------------------------------
 # Sidebar  Upload Window
@@ -111,7 +111,7 @@ if df is not None:
 
     # ---------------- Query Window ----------------
     with col1:
-        st.subheader("Ask a Query (NLP Style)")
+        st.subheader("Ask a Query")
 
         query = st.text_input(
             "Type your question",
@@ -130,7 +130,7 @@ if df is not None:
 
     # ---------------- Result Window ----------------
     with col2:
-        st.subheader("Query Result")
+        st.subheader(" Result")
 
         if query:
             result = process_query(query, df)
@@ -143,4 +143,5 @@ if df is not None:
             st.info("Enter a query to see results")
 
     
+
 
