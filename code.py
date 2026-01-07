@@ -8,7 +8,7 @@ import re
 # -------------------------------------------------
 st.set_page_config(page_title="TNA Analytics & NLP Query Portal", layout="wide")
 
-st.title("Training Needs Analysis (TNA) NLP Query Portal")
+st.title("Training Needs Analysis (TNA) Query Portal")
 
 # -------------------------------------------------
 # Sidebar  Upload Window
@@ -143,3 +143,4 @@ if df is not None:
             st.info("Enter a query to see results")
 
     
+
