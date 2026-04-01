@@ -1,6 +1,6 @@
 """
-SDTM Document QC Checker — Streamlit App
-Checks 10 queries against define.xml (HTML) and SDRG PDF documents.
+Document QC Checker — Streamlit App
+Checks given queries against define.xml (HTML) and PDF documents.
 """
 
 import streamlit as st
@@ -13,7 +13,7 @@ import anthropic
 
 # ─── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="📋 SDTM Document QC Checker",
+    page_title="📋 Document QC Checker",
     page_icon="📋",
     layout="wide",
 )
@@ -50,8 +50,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Title ────────────────────────────────────────────────────────────────────
-st.title("📋 SDTM Document QC Checker")
-st.markdown("Automated quality checks on **define.xml (HTML)** and **SDRG PDF** documents.")
+st.title("📋 Document QC Checker")
+st.markdown("Automated quality checks on **define.xml (HTML)** and **PDF** documents.")
 st.divider()
 
 # ─── File Upload ──────────────────────────────────────────────────────────────
@@ -59,7 +59,7 @@ col1, col2 = st.columns(2)
 with col1:
     html_file = st.file_uploader("📄 Upload define.xml (HTML file)", type=["html", "htm"])
 with col2:
-    pdf_file = st.file_uploader("📑 Upload SDRG PDF", type=["pdf"])
+    pdf_file = st.file_uploader("📑 Upload PDF", type=["pdf"])
 
 st.divider()
 
